@@ -2,8 +2,12 @@ import React from "react";
 import axios from "axios";
 import StripeCheckout from "react-stripe-checkout";
 
-import STRIPE_PUBLISHABLE from "./constants/stripe";
-import PAYMENT_SERVER_URL from "./constants/server";
+// import STRIPE_PUBLISHABLE from "./constants/stripe";
+// import PAYMENT_SERVER_URL from "./constants/server";
+
+// Stripe ENV Variables
+const STRIPE_PUBLISHABLE = process.env.STRIPE_PUBLISHABLE;
+const PAYMENT_SERVER_URL = process.env.PAYMENT_SERVER_URL;
 
 const CURRENCY = "EUR";
 
